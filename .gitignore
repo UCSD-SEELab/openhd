@@ -1,0 +1,21 @@
+# General extensions
+*.pyc
+*.swp
+tmp.*
+#*.png
+
+# Files
+#dir/filename
+
+# Working dirs
+#dir/subdir
+
+# Sphinx files
+docs/_build
+
+# Some personal scripts
+copy_doc.sh
+
+# Some debugging files
+debug_dfg.*
+debug_cfg.*
