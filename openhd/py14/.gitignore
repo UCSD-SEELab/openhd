@@ -1,0 +1,7 @@
+*.swp
+*.swo
+*~
+*.swn
+*.pyc
+.coverage
+.ropeproject

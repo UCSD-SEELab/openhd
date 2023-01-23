@@ -1,0 +1,2 @@
+include openhd/backend/include/*.h
+include openhd/runtime/cu/*.cu
