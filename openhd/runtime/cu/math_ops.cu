@@ -32,3 +32,12 @@ extern "C" __global__ void sign(float* hvmatrix) {
     else
         hvmatrix[idx_in_mat * __D__ + d] = -1.0f;
 }
+
+
+extern "C" __global__ void fill(float* hvmatrix, float value) {
+    const int d = threadIdx.x + blockIdx.x * blockDim.x;
+    const int idx_in_mat = blockIdx.y;
+    if (d >= __D__) return;
+
+    hvmatrix[idx_in_mat * __D__ + d] = value;
+}
